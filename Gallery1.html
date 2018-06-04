@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Styles</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--css links-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!--bootstrap-->
+<link href="css/font-awesome.css" rel="stylesheet"><!--font-awesome-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!--stylesheet-->
+<!--//css links-->
+		
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+<style type="text/css">
+	.thumb{
+		color: white;
+	}
+	h2{
+		color: white;
+		font-size: 20px;
+	}
+	p{
+		color: white;
+		font-size: 15px;
+		padding-bottom: 20px;
+	}
+
+	/* pop up for sign in and sign up form */
+
+#small-dialog1 h3{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="email"], #small-dialog1 input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #f1b458;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div#small-dialog1,div#small-dialog2 {
+    padding: 50px;
+}
+form ul {
+    float: left;
+    list-style-type: none;
+}
+form a {
+    color: #000;
+    float: right;
+    font-size: 13px;
+}
+#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+    background: #f1b458;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    margin-top: 30px;
+    width: 100%;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.modal-dialog {
+    width: 500px;
+    margin: 30px auto;
+}
+ul li input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 25px;
+    border: #f1b458;
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+}
+ul li input[type="checkbox"]+label span:first-child {
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #000;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    bottom: 4px;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+ul li input[type="checkbox"]:checked+label span:first-child:before {
+    content: "";
+    background: url(../images/tick.png)no-repeat;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+}
+#small-dialog2 h3 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#small-dialog input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="text"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #f1b458;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+    background: #f1b458;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    margin-top: 30px;
+    width: 100%;
+}
+/* //pop up for sign in and sign up form */
+</style>	
+
+<body>
+<div id="home" class="banner w3l">
+		<div class="header-nav">
+			<nav class="navbar navbar-default">
+			<div class="header-top">
+					<div class="navbar-header logo">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<h1>
+									<a class="navbar-brand" href="index.php"><i class="fa fa-paint-brush" aria-hidden="true"></i>DreamDraw</a>
+								</h1>
+					</div>
+ <!-- popup for sign in form -->
+<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div id="small-dialog1" class="mfp-hide book-form">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3>Sign In </h3>
+					<form action="check.php" method="get">
+						<input type="email" name="email" class="email" placeholder="Email" required=""/>
+						<input type="password" name="password" class="password" placeholder="Password" required=""/>	
+						<ul>
+						<li>
+							<input type="checkbox" id="brand1" value="">
+							<label for="brand1"><span></span>Remember me</label>
+						</li>
+						</ul>
+						<a href="#" data-toggle="modal" data-target="#myModal2"><span></span>Sign Up</a>
+						<div class="clearfix"></div>
+							<input type="submit" value="Sign In">
+							<?php         
+          if(isset($_GET['Sign In'])) { if($_GET['Sign In'] == "true")
+          echo " <label class='contact'><strong style='color:red'>Login was successful</strong></label>";
+          else echo " <label class='contact'><strong style='color:red'>Login was not successful</strong></label>";}
+          ?>
+					</form>
+					 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //popup for sign in form -->
+
+<!-- popup for sign up form -->
+<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div id="small-dialog2" class="mfp-hide book-form">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3>Sign Up</h3>
+				 <?php if(!empty($success_message)) { ?>    
+        <div class="success-message"><?php if(isset($success_message)) echo $success_message; ?></div>
+        <?php } ?>
+        <?php if(!empty($error_message)) { ?>   
+        <div class="error-message"><?php if(isset($error_message)) echo $error_message; ?></div>
+        <?php } ?>          
+					<form name="register" action="" method="post">
+						<input type="text" name="name" placeholder="Your Name" required=""/>
+						<input type="email" name="email" class="email" placeholder="Email" required=""/>
+						<input type="password" name="password" class="password" placeholder="Password" required=""/>	
+						<input type="password" name="confirm_password" class="password" placeholder="Confirm Password" required=""/>
+						<input type="submit" value="Sign Up" name="register-user">
+					</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //popup for sign up form -->					
+					<!-- navbar-header -->
+					<div class="contact-bnr-w3-agile">
+								<ul>
+									<li>
+									<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+								</ul>
+							</div>
+							</div>
+					<div class="collapse navbar-collapse cl-effect-13" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.php" class="active">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							
+							<li><a href="Gallery1.html">Styles</a></li>
+							<li><a href="contact.php">Contact</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+
+					</div>
+					<div class="clearfix"> </div>	
+				</nav>
+							
+		</div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header-->
+					<header id="header">
+						<h1><a href="index.php"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+						<nav>
+							<ul>
+								<li><a href="#footer" class="icon fa-info-circle">About</a></li>
+							</ul>
+						</nav>
+					</header> 
+
+				<!-- Main -->
+					<div id="main">
+						
+						<article class="thumb">
+							<a href="images/Mariya-Lopuhina-5.jpg" class="image"><img src="images/Mariya-Lopuhina-5.jpg" alt="" /></a>
+							<h2><a href="services.html">Портрет</a></h2>
+							<p>Портрет — это повторение в пластических формах, линиях и красках живого лица, и одновременно при этом его идейно-художественная интерпретация.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/girls-in-the-fields-by-Kazimir-Malevich-0018.jpg" class="image"><img src="images/girls-in-the-fields-by-Kazimir-Malevich-0018.jpg" alt="" /></a>
+							<h2><a href="full-width.html">Супрематизм</h2>
+							<p>Супрематизм — направление в искусстве, метод выражения структуры мироздания в геометрических формах прямой линии, квадрата, круга и прямоугольника.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/5549f53759592.jpg" class="image"><img src="images/5549f53759592.jpg" alt="" /></a>
+							<h2><a href="https://vk.com/botartt">Абстракционизм</h2></a>
+							<p>Абстракциони́зм - направление искусства, отказавшееся от приближённого к действительности изображения форм в живописи и скульптуре.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/Vrubel-SHestikryilyiy-serafim-Azrail-1904-god1.jpg" class="image"><img src="images/Vrubel-SHestikryilyiy-serafim-Azrail-1904-god1.jpg" alt="" /></a>
+							<h2><a href="https://vk.com/botartt">Модернизм</h2></a>
+							<p>Модерни́зм — направление характеризующееся разрывом с предшествующим историческим опытом художественного творчества, стремлением утвердить новые, нетрадиционные начала в искусстве, непрерывным обновлением художественных форм.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/expressionism-13.jpg" class="image"><img src="images/expressionism-13.jpg" alt="" /></a>
+							<h2><a href="https://vk.com/botartt">Экспрессионизм</a></h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						
+						
+						<article class="thumb">
+							<a href="images/futurism_heroic_carra_il_funerale_dellanarchico_galli.jpg" class="image"><img src="images/futurism_heroic_carra_il_funerale_dellanarchico_galli.jpg" alt="" /></a>
+							<h2>Футуризм</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/marylin-monroe-pop-art-ahmad-nusyirwan.jpg" class="image"><img src="images/marylin-monroe-pop-art-ahmad-nusyirwan.jpg" alt="" /></a>
+							<h2>Поп-арт</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/yNmfG9mHXNw.jpg" class="image"><img src="images/yNmfG9mHXNw.jpg" alt="" /></a>
+							<h2><a href="https://vk.com/botartt">Аниме</h2></a>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/antonio-de-luca-the-scream-vs-mona-lisa.jpg" class="image"><img src="images/antonio-de-luca-the-scream-vs-mona-lisa.jpg" alt="" /></a>
+							<h2>Карикатура</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						
+					</div>
+
+				<!-- Footer -->
+					<!--<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>Magna feugiat sed adipiscing</h2>
+									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+								</section>
+								<section>
+									<h2>Follow me on ...</h2>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+								</p>
+							</div>
+							<div>
+								<section>
+									<h2>Get in touch</h2>
+									<form method="post" action="#">
+										<div class="field half first">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="text" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+							</div>
+						</div>
+					</footer>
+
+			</div>-->
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
